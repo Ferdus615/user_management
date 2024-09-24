@@ -1,0 +1,151 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  /* margin: 0; */
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logout {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.greeting {
+  padding: 20px;
+  font-size: large;
+  font-weight: 400;
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border: 2px solid #000000;
+  border-radius: 5px;
+  background-color: #e6e6e6;
+  padding: 10px 5px;
+  margin-bottom: 10px;
+
+  color: #000000;
+}
+
+.button {
+  border-radius: 5px;
+  border: 2px solid black;
+  padding: 5px;
+  margin: 5px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: #242424;
+  background-color: #d3d2d2;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.button:hover {
+  background-color: #ff6464;
+}
+.button:focus,
+.button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.button-dlt {
+  border-radius: 5px;
+  border: 2px solid black;
+  padding: 5px;
+  margin: 5px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: #242424;
+  background-color: #ff6464;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.button-dlt:hover {
+  background-color: #ff0000;
+}
+.button-dlt:focus,
+.button-dlt:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.table-style {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.table-style th,
+.table-style td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #272727;
+}
+.table-style th {
+  background-color: #adadad;
+  font-weight: bold;
+}
+.table-style tr:hover {
+  background-color: #f5f5f5;
+}
+.table-style input[type="checkbox"] {
+  cursor: pointer;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
