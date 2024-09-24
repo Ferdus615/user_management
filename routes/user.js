@@ -1,6 +1,6 @@
 const express = require('express');
 const User = require('../models/user');
-const auth = require('../middlewares/auth');
+const auth = require('../backend/middlewares/auth');
 const router = express.Router();
 
 router.get('/', auth, (req, res) => {
